@@ -1,7 +1,7 @@
 %{
 
    -----------Distribucion termica del dinero en una sociedad v3.0------------
-   --------------------Ricardo López Rodríguez A01066515---------------------------  
+   --------------------Ricardo LÃ³pez RodrÃ­guez A01066515---------------------------  
    
     El siguiente codigo simula transacciones entre una sociedad de N
     agentes, la reestriccion del sistema es la consevarcion del dinero M.
@@ -18,7 +18,7 @@ function moneyDistribution()
     set(0,'defaultTextInterpreter','latex');
     
     animacion = false;
-    objetivos = true ; %Calcular y graficar las funciones objetivo
+    objetivos = false ; %Calcular y graficar las funciones objetivo
     option = input("Distribucion inicial --- >   1. Delta    2. Uniforme");
     deltaMs = input("Ingresa un vector con las deltaM a visualizar");   % deltaM --> 0.05,0.5,0.8,1
     N = 1000; %500; %Numero de agentes
@@ -50,7 +50,7 @@ function moneyDistribution()
 
     end          
    
-    % Valores promedio de maximo y minimo después de haber corrido varios
+    % Valores promedio de maximo y minimo despuÃ©s de haber corrido varios
     %experimentos (Ayudan a fijar las clases)
     maxVal = 5322; %6000
     minVal = 1;    
@@ -245,7 +245,7 @@ function showEntropy(matrix,deltaMs)
         xlabel("\textbf{t}")
         ylabel("\textbf{S}")
         %legend("\Delta m = 0.05", "\Delta m = 0.1", "\Delta m = 0.3","\Delta m = 0.5")
-       % legend("Distribución inicial M/N", "Distribución inicial uniforme")
+       % legend("DistribuciÃ³n inicial M/N", "DistribuciÃ³n inicial uniforme")
         hold on %.05
     end
 
